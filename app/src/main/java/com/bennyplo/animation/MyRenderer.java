@@ -19,6 +19,7 @@ public class MyRenderer implements GLSurfaceView.Renderer {
     private CharacterS mcharS;
     private Sphere msphere;
     private ArbitaryShape marbitary;
+    float mAngle;
     @Override
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
         // Set the background frame color to black
@@ -27,6 +28,7 @@ public class MyRenderer implements GLSurfaceView.Renderer {
         mcharS=new CharacterS();
         msphere=new Sphere();
         marbitary=new ArbitaryShape();
+        mAngle =0;
     }
     public static void checkGlError(String glOperation) {
         int error;
@@ -63,7 +65,7 @@ public class MyRenderer implements GLSurfaceView.Renderer {
         Matrix.setIdentityM(mMVPMatrix,0);//set the model view projection matrix to an identity matrix
         Matrix.setIdentityM(mMVMatrix,0);//set the model view  matrix to an identity matrix
         Matrix.setIdentityM(mModelMatrix,0);//set the model matrix to an identity matrix
-        Matrix.setRotateM(mRotationMatrix2, 0, 30, 0f, 1f, 0);//rotate around the y-axis
+        Matrix.setRotateM(mRotationMatrix2, 0,mAngle, 0f, 1f, 0);//rotate around the y-axis
         Matrix.setRotateM(mRotationMatrix, 0, 30, 1f, 0f, 0);//rotate around the x-axis
         // Set the camera position (View matrix)
         Matrix.setLookAtM(mViewMatrix, 0,
@@ -82,5 +84,9 @@ public class MyRenderer implements GLSurfaceView.Renderer {
         //mcharS.draw(mMVPMatrix);
         //msphere.draw(mMVPMatrix);
         //marbitary.draw(mMVPMatrix);
+    }
+
+    public void setmAngle(float mAngle) {
+        this.mAngle = mAngle;
     }
 }

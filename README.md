@@ -1,3 +1,4 @@
+![WhatsApp Image 2022-03-05 at 20 38 52](https://user-images.githubusercontent.com/58391156/156897872-156303ba-8046-41db-a329-b22c3f54b4f7.jpeg)
 # Advanced-Android-MOOC-Animation
 MOOC course on Advanced Android - sample program for the course "3D Graphics in Android: Sensors and VR" module animation, touch and lighting. 
 

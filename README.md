@@ -10,4 +10,4 @@ CharacterS - an example 3D character S
 Sphere - a 3D sphere
 ArbitaryShape - an arbtary 3D object
 (For details on how to create these 3D objects, please refer to my MOOC course on Fundamentals of OpenGL in Android)
-
+![](images/WhatsApp Image 2022-03-05 at 20.38.52.jpeg)
